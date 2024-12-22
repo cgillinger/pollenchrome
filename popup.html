@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollenhalter</title>
+  <script src="popup.js" defer></script>
+  <style>
+    /* Grundläggande styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+      color: #333;
+      text-align: center;
+      width: 300px;
+    }
+
+    /* Rubriksektion */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      margin: 0 0 0 10px;
+      color: #444;
+    }
+
+    /* Kontroller */
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .region-picker {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      background-color: white;
+    }
+
+    .region-picker:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    /* Knapp */
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Dataområde */
+    #data {
+      margin-top: 15px;
+    }
+
+    #data p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Tabell */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    /* Nivåklasser */
+    .level-low {
+      color: green;
+      font-weight: bold;
+    }
+    .level-medium {
+      color: orange;
+      font-weight: bold;
+    }
+    .level-high {
+      color: red;
+      font-weight: bold;
+    }
+    .level-extreme {
+      color: darkred;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/pollen-flower48x48.png" alt="Pollenikon">
+    <h1>Pollenhalter</h1>
+  </div>
+  <div class="controls">
+    <select id="region-select" class="region-picker">
+      <option value="all">Alla regioner</option>
+    </select>
+    <button id="fetch-data">Hämta Prognos</button>
+  </div>
+  <div id="data">
+    <p>Ingen data än.</p>
+  </div>
+</body>
+</html>

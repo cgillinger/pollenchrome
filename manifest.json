@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Pollenprognos Plugin",
+  "version": "1.1.0",
+  "description": "Visa aktuella pollenprognoser direkt i Chrome.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://api.pollenrapporten.se/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/pollen-flower16x16.png",
+      "48": "icons/pollen-flower48x48.png",
+      "128": "icons/pollen-flower128x128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/pollen-flower16x16.png",
+    "48": "icons/pollen-flower48x48.png",
+    "128": "icons/pollen-flower128x128.png"
+  }
+}
