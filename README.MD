@@ -1,6 +1,6 @@
-# Pollenprognos för Chrome
+# Pollenprognos för Chrome och Edge
 
-Ett enkelt och användarvänligt Chrome-tillägg som visar aktuella pollenprognoser direkt i din webbläsare. Få snabb tillgång till pollendata för olika regioner i Sverige och håll koll på pollennivåerna som påverkar dig.
+Ett enkelt och användarvänligt webbläsartillägg som visar aktuella pollenprognoser direkt i din webbläsare. Få snabb tillgång till pollendata för olika regioner i Sverige och håll koll på pollennivåerna som påverkar dig.
 
 Detta tillägg använder data från Naturhistoriska riksmuseets pollendatabas via deras officiella API. Naturhistoriska riksmuseet ansvarar för den svenska pollenmätningen och tillhandahåller dagliga pollenprognoser för olika regioner i Sverige.
 
@@ -16,7 +16,7 @@ Detta tillägg använder data från Naturhistoriska riksmuseets pollendatabas vi
 
 ## Installation för användare
 
-Följ dessa enkla steg för att installera tillägget i Chrome:
+### Installation i Chrome
 
 1. **Ladda ner filerna**
    - Klicka på den gröna "Code" knappen ovanför
@@ -31,22 +31,47 @@ Följ dessa enkla steg för att installera tillägget i Chrome:
    - Leta upp och välj mappen där du packade upp filerna
    - Klart! Du ska nu se ett blomikon i Chrome's tilläggsfält
 
-3. **Börja använda**
-   - Klicka på blomikonen i Chrome för att öppna tillägget
-   - Välj din region i rullgardinsmenyn
-   - Klicka på "Hämta Prognos" för att se aktuella pollenhalter
+### Installation i Edge
+
+1. **Ladda ner filerna**
+   - Klicka på den gröna "Code" knappen ovanför
+   - Välj "Download ZIP"
+   - Packa upp ZIP-filen till en mapp på din dator
+
+2. **Installera i Edge**
+   - Öppna Edge
+   - Skriv in `edge://extensions` i adressfältet och tryck Enter
+   - Hitta omkopplaren "Utvecklarläge" i vänstra sidofältet och slå på den
+   - Klicka på knappen "Läs in uppackad" som dyker upp
+   - Leta upp och välj mappen där du packade upp filerna
+   - Klart! Du ska nu se ett blomikon i Edge's tilläggsfält
+
+### Börja använda
+
+Efter installation:
+- Klicka på blomikonen i webbläsarens tilläggsfält för att öppna tillägget
+- Välj din region i rullgardinsmenyn
+- Klicka på "Hämta Prognos" för att se aktuella pollenhalter
 
 ## Felsökning
 
 Om du inte ser tillägget efter installation:
 1. Kontrollera att utvecklarläge är påslaget
-2. Prova att stänga och öppna Chrome igen
+2. Prova att stänga och öppna webbläsaren igen
 3. Se till att alla filer packades upp korrekt
 
 Om data inte laddas:
 1. Kontrollera din internetanslutning
 2. Klicka på uppdateringsknappen igen
 3. Om problemet kvarstår, prova att avinstallera och installera om tillägget
+
+### Vanliga problem i Chrome
+- Om ikonen är gråmarkerad, prova att högerklicka och välja "Aktivera"
+- Om tillägget inte syns i listan, säkerställ att du är i utvecklarläge
+
+### Vanliga problem i Edge
+- Om tillägget inte dyker upp efter installation, kontrollera att du valt rätt mapp
+- Om du får felmeddelande vid installation, säkerställ att alla filer är på plats
 
 ## För utvecklare
 
@@ -57,13 +82,38 @@ För att bidra till projektet:
 4. Pusha till branchen (`git push origin ny-funktion`)
 5. Skapa en Pull Request
 
+### Utvecklingsnoteringar
+- Tillägget är byggt med Manifest V3
+- Använder modern JavaScript och Chrome/Edge Extension API:er
+- Stödjer både Chrome och Edge genom Chromium-kompatibilitet
+
 ## Credits
-- **API**: Data provided by [Swedish Museum of Natural History's Pollen API](https://api.pollenrapporten.se/docs).
-- **Icons**: Weather icons from [Meteocons Weather Icons](https://iconduck.com/sets/meteocons-weather-icons), licensed under [MIT License](https://opensource.org/licenses/MIT).
+- **API**: Data tillhandahålls av [Naturhistoriska riksmuseets Pollen API](https://api.pollenrapporten.se/docs)
+- **Ikoner**: Väderikoner från [Meteocons Weather Icons](https://iconduck.com/sets/meteocons-weather-icons), licensierade under [MIT License](https://opensource.org/licenses/MIT)
 
 ## License
-This module is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+Detta projekt är licensierat under [MIT License](https://opensource.org/licenses/MIT).
 
 ## Support
 
-Om du stöter på problem eller har förslag på förbättringar, vänligen skapa ett ärende under "Issues" på GitHub.
+Om du stöter på problem eller har förslag på förbättringar:
+- Skapa ett ärende under "Issues" på GitHub
+- Inkludera följande i din rapport:
+  - Vilken webbläsare du använder (Chrome/Edge)
+  - Webbläsarversion
+  - Exakt beskrivning av problemet
+  - Stegen för att återskapa problemet
+
+## Version och uppdateringar
+
+Nuvarande version: 1.1.0
+- Stöd för både Chrome och Edge
+- Förbättrad felhantering
+- Automatisk regionssparning
+- Bättre prestanda vid datahämtning
+
+Kommande funktioner:
+- Automatisk uppdatering av data
+- Stöd för notifieringar
+- Möjlighet att jämföra regioner
+- Historikvy över pollenhalter
