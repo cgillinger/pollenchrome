@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Pollenprognos Plugin",
+  "name": "__MSG_appName__",
   "version": "1.1.0",
-  "description": "Visa aktuella pollenprognoser direkt i webbläsaren.",
+  "description": "__MSG_appDesc__",
+  "default_locale": "sv",
   "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["https://api.pollenrapporten.se/*"],
   "background": {
