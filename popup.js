@@ -309,7 +309,11 @@ function displayForecastData(forecastData, regionsData, pollenTypesData, selecte
           1: { text: "Låg", class: "level-low" },
           2: { text: "Medel", class: "level-medium" },
           3: { text: "Hög", class: "level-high" },
-          4: { text: "Extrem", class: "level-extreme" }
+          4: { text: "Mycket hög", class: "level-high" },
+          5: { text: "Extrem", class: "level-extreme" },
+          6: { text: "Mycket extrem", class: "level-extreme" },
+          7: { text: "Kritisk", class: "level-extreme" },
+          8: { text: "Akut", class: "level-extreme" }
         };
 
         const levelInfo = levelMap[pollenLevel] || { text: "Okänd", class: "level-none" };

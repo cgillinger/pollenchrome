@@ -106,14 +106,15 @@ Om du stöter på problem eller har förslag på förbättringar:
 
 ## Version och uppdateringar
 
-Nuvarande version: 1.1.0
+Nuvarande version: 1.2.1
+- Uppdaterade pollennivåer
+
+Tidigare version: 1.2.0
+- La till prognosens giltighetstid
+
+Tidigare version: 1.1.0
 - Stöd för både Chrome och Edge
 - Förbättrad felhantering
 - Automatisk regionssparning
 - Bättre prestanda vid datahämtning
 
-Kommande funktioner:
-- Automatisk uppdatering av data
-- Stöd för notifieringar
-- Möjlighet att jämföra regioner
-- Historikvy över pollenhalter
